@@ -1,6 +1,3 @@
-css=/cgit-css/cgit.css
-logo=/cgit-css/cgit.png
-robots=noindex, nofollow
 source-filter=/usr/lib/cgit/filters/syntax-highlighting.sh
 scan-path=/srv/git/
 virtual-root=/
