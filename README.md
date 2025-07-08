@@ -2,11 +2,11 @@
 
 git cache proxy server with nginx and cgit
 
-# Usage 
+# Usage
 
 Docker Compose:
 
-```
+```yaml
 services:
   git:
     container_name: git
@@ -18,4 +18,6 @@ services:
     - NGINX_CORS_DOMAIN=cors.yg.lan
     volumes:
     - ./data:/srv/git
+    ports:
+    - 80:80
 ```
