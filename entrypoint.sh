@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git daemon --inetd --export-all --base-path=/srv/git &
+git daemon --reuseaddr --detach --export-all --base-path=/srv/git
 
 [ -e /run/fcgiwrap.socket ] && rm -f /run/fcgiwrap.socket
 fcgiwrap -s unix:/run/fcgiwrap.socket > /dev/null 2>&1 &
