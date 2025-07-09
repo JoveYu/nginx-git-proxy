@@ -1,3 +1,4 @@
+clone-url=http://$HTTP_HOST/$CGIT_REPO_URL git://$HTTP_HOST/$CGIT_REPO_URL
 source-filter=/usr/lib/cgit/filters/syntax-highlighting.sh
 scan-path=/srv/git/
 virtual-root=/
